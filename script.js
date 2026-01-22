@@ -11,7 +11,7 @@ const key="d40fbade12040db97bc2eb8ca839cf4b";
 oldTab.classList.add("current-tab");
  
 
-getfromSessionStorage();getfromSessionStorage()
+getfromSessionStorage();
 function switchTab(newTab){
     if(newTab!=oldTab){
         oldTab.classList.remove('current-tab');
@@ -50,7 +50,7 @@ function getfromSessionStorage(){
 
 async function fetchWeatherInfo(coordinates){
     const {lat,lon}=coordinates;
-    grantAccessContainer.classList.remove('acitve');
+    grantAccessContainer.classList.remove('active');
 
     loadingScreen.classList.add('active');
 
@@ -70,7 +70,7 @@ function renderWeatherInfo(data){
     //fetch the element
 
     const cityName=document.querySelector('[data-cityName]');
-    const  countryIcon=document.querySelector('[data-countryIcon');
+    const  countryIcon=document.querySelector('[data-countryIcon]');
     const desc=document.querySelector('[data-weatherDesc]');
     const weatherIcon=document.querySelector('[data-weatherIcon]');
     const temp=document.querySelector('[data-temp]');
