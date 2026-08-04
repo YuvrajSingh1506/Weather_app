@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   frontend:
-    build: .
+    image : yuvi7976/weather-app-test
     container_name: my-frontend
     ports:
       - "3000:80"
